@@ -1,0 +1,37 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-12-27 13:43:54
+ * @LastEditTime: 2021-12-27 14:00:29
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \react_study\react_study\第一章hello,world\hello world\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <!-- crossorigin代表跨域，src本身就可以跨域，但是加上这个出现问题可以展示详细信息-->
+    <!-- react核心库 -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <!-- react核心库与页面结合 -->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <script>
+        var span = React.createElement("span", {}, "这是一个span")
+        var h1 = React.createElement("h1", {
+            title: "第一个react元素"
+        }, "hello world", span)
+        ReactDOM.render(h1, document.getElementById("root"))
+    </script>
+
+</body>
+
+</html>
